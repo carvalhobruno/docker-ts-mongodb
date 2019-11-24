@@ -1,0 +1,43 @@
+{
+  "name": "type-express",
+  "version": "1.0.0",
+  "description": "Dockerized app written in typescript using mongodb and mongoose",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7",
+    "express": "^4.16",
+    "lodash": "^4.15.0",
+    "method-override": "^2.3.6",
+    "mongoose": "^5.2.5"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.16.8",
+    "@types/chai": "^4.1.0",
+    "@types/compression": "^0.0.35",
+    "@types/express": "^4.11.0",
+    "@types/lodash": "^4.14.92",
+    "@types/method-override": "^0.0.31",
+    "@types/mocha": "^2.2.46",
+    "@types/mongoose": "^5.2.2",
+    "@types/supertest": "^2.0.4",
+    "@types/supertest-as-promised": "^2.0.35",
+    "chai": "^3.5.0",
+    "supertest": "^3.0.0",
+    "supertest-as-promised": "^4.0.2",
+    "tslint": "^5.16.0",
+    "tslint-microsoft-contrib": "^6.1.1",
+    "typescript": "^3.4.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript",
+    "node",
+    "express",
+    "docker"
+  ],
+  "author": "Aurélien Hervé",
+  "license": "ISC"
+}

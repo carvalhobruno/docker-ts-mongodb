@@ -1,0 +1,97 @@
+{
+  "extends": "tslint:latest",
+  "rulesDirectory": [
+    "node_modules/tslint-microsoft-contrib"
+  ],
+  "rules": {
+    "mocha-avoid-only": true,
+    "arrow-parens": false,
+    "ban-types": [
+      true,
+      [
+        "Object",
+        "Avoid using the `Object` type. Did you mean `object`?"
+      ],
+      [
+        "Boolean",
+        "Avoid using the `Boolean` type. Did you mean `boolean`?"
+      ],
+      [
+        "Number",
+        "Avoid using the `Number` type. Did you mean `number`?"
+      ],
+      [
+        "String",
+        "Avoid using the `String` type. Did you mean `string`?"
+      ],
+      [
+        "Symbol",
+        "Avoid using the `Symbol` type. Did you mean `symbol`?"
+      ]
+    ],
+    "class-name": true,
+    "comment-format": false,
+    "curly": false,
+    "eofline": true,
+    "indent": [
+      "spaces"
+    ],
+    "interface-name": false,
+    "max-line-length": [
+      true,
+      140
+    ],
+    "no-object-literal-type-assertion": false,
+    "no-angle-bracket-type-assertion": false,
+    "no-console": false,
+    "no-implicit-dependencies": [
+      true,
+      "dev"
+    ],
+    "no-string-literal": false,
+    "object-literal-key-quotes": [
+      true,
+      "as-needed"
+    ],
+    "object-literal-sort-keys": false,
+    "only-arrow-functions": false,
+    "ordered-imports": false,
+    "member-ordering": [
+      true,
+      [
+        "public-before-private",
+        "static-before-instance",
+        "variables-before-functions"
+      ]
+    ],
+    "no-arg": true,
+    "no-construct": true,
+    "no-duplicate-variable": true,
+    "no-empty": true,
+    "no-eval": true,
+    "no-namespace": false,
+    "no-submodule-imports": [
+      true,
+      "rxjs"
+    ],
+    "no-trailing-whitespace": true,
+    "no-unused-expression": false,
+    "one-line": [
+      true,
+      "check-open-brace",
+      "check-catch",
+      "check-else",
+      "check-whitespace"
+    ],
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "space-before-function-paren": false,
+    "semicolon": false,
+    "trailing-comma": true,
+    "triple-equals": true,
+    "variable-name": false,
+    "prefer-conditional-expression": false
+  }
+}
