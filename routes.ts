@@ -3,13 +3,11 @@
  */
 
 import ping from './api/ping'
-import payable from './api/payable'
 import empresa from './api/empresa'
 import * as express from 'express'
 
 const routes = (app: express.Application): void => {
   app.use('/api/ping', ping)
-  app.use('/api/payable', payable)
   app.use('/api/empresa', empresa)
 
   app.route('/*')
