@@ -4,14 +4,14 @@
 
 import ping from './api/ping'
 import empresa from './api/empresa'
-import * as express from 'express'
+import { Application, Response, Request } from 'express'
 
-const routes = (app: express.Application): void => {
+const routes = (app: Application): void => {
   app.use('/api/ping', ping)
   app.use('/api/empresa', empresa)
 
   app.route('/*')
-    .get((req: express.Request, res: express.Response) => {
+    .get((req: Request, res: Response) => {
       res.sendStatus(404)
     });
 };

@@ -5,7 +5,7 @@ export const criar = apiMethod<any>(async (req: any) => {
   const empresa = {
     ...req.body,
     dataDeCriacao: new Date(),
-    status: "Criada",
+    status: 'Criada',
   }
 
   const criada = await Empresa.create(empresa)
