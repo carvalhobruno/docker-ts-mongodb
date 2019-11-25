@@ -4,15 +4,10 @@ interface INomeParaValorMap {
     [key: string]: any;
 }
 
-// export const PayablePaymentMethodsMap: INameToValueMap = Object.freeze({
-//   debit_card: 'debit_card',
-//   credit_card: 'credit_card'
-// })
-
 export interface IEmpresa extends Document {
   nome: string,
   email: string,
-  cnpj: number,
+  cnpj: string,
   dataDeCriacao: Date
   socios: Array<{
     nome: number;
@@ -26,10 +21,9 @@ export interface IEmpresa extends Document {
 const EmpresaSchema: Schema = new Schema({
   nome: { type: String, required: true },
   email: { type: String, required: true, unique: true },
-  cnpj: { type: Number, required: true },
+  cnpj: { type: String, required: true, unique: true },
   dataDeCriacao: { type: Date, required: true },
   socios: { type: Array, required: false },
-  card: { type: Map, required: true },
   status: { type: String, required: true },
   capital: { type: Number, required: true }
 })

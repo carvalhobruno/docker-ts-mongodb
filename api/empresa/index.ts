@@ -3,7 +3,7 @@ import { Router } from 'express'
 
 const router = Router()
 
-router.post('/', controller.create)
-router.get('/', controller.getAll)
+router.post('/', controller.criar)
+router.get('/', controller.listar)
 
 export default router

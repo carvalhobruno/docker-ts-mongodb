@@ -1,21 +1,23 @@
 import { Empresa, IEmpresa } from './empresa.model'
 import { apiMethod, getIp } from '../helpers';
 
-export const create = apiMethod<any>(async (req: any) => {
+export const criar = apiMethod<any>(async (req: any) => {
   const empresa = {
-    ...req.body
+    ...req.body,
+    dataDeCriacao: new Date(),
+    status: "Criada",
   }
 
-  const created = await Empresa.create(empresa)
-  return {data: {
-    created
+  const criada = await Empresa.create(empresa)
+  return { data: {
+    criada
   }}
 })
 
-export const getAll = apiMethod<any>(async (req: any) => {
+export const listar = apiMethod<any>(async (req: any) => {
   const empresas = await Empresa.find({});
 
-  return {data: {
+  return { data: {
     empresas
   }}
 })
