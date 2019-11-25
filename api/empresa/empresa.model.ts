@@ -1,4 +1,4 @@
-import {Document, Schema} from 'mongoose'
+import {Document, Schema, model} from 'mongoose'
 
 interface INomeParaValorMap {
     [key: string]: any;
@@ -34,4 +34,4 @@ const EmpresaSchema: Schema = new Schema({
   capital: { type: Number, required: true }
 })
 
-export const Empresa = mongoose.model<IEmpresa>('Empresa', EmpresaSchema)
+export const Empresa = model<IEmpresa>('Empresa', EmpresaSchema)

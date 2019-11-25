@@ -2,11 +2,11 @@ import { Empresa, IEmpresa } from './empresa.model'
 import { apiMethod, getIp } from '../helpers';
 
 export const create = apiMethod<any>(async (req: any) => {
-  let payable = {
+  const empresa = {
     ...req.body
   }
 
-  const created = await Empresa.create(payable)
+  const created = await Empresa.create(empresa)
   return {data: {
     created
   }}
